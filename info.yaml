@@ -1,15 +1,15 @@
 # Tiny Tapeout project information
 project:
-  title:        "4-Mode Matrix Multiply Accelerator"
-  author:       "Faijul Amin"          # change to your name(s)
-  discord:      ""                    # optional
-  description:  "2x2+ReLU and 4x4 signed int8 matrix-multiply core with tiled accumulation. Serial byte I/O protocol."
+  title:        "QuadNeuro Engine"
+  author:       "Faijul Amin, Rakin Choudhury, Raeed Abedin Tarafder"
+  discord:      ""                    
+  description:  "Parallel 2×2 and pipelined 4×4 matrix multiply accelerator with ReLU and tiled accumulation, using 8 simultaneous hardware multipliers for AI inference acceleration"
   language:     "Verilog"
   clock_hz:     33000000
 
   # How many tiles your design occupies?
-  tiles: "4x2"                        # NOTE: template says valid values are 1x1, 1x2, 2x2, 3x2, 4x2, 6x2, 8x2
-                                     # If Actions complains, set this to "4x2" and reduce the design, or confirm allowed sizes for your hackathon.
+  tiles: "4x2"                        
+                                    
 
   # Your top module name must start with "tt_um_".
   top_module:  "tt_um_matmul"
